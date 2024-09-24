@@ -1,0 +1,38 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Event Planner</h1>
+    </header>
+    <main>
+        <section id="event-details">
+            <h2>Event Details</h2>
+            <form id="event-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required>
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+                <label for="event-location">Event Location:</label>
+                <input type="text" id="event-location" name="event-location" required>
+                <label for="event-budget">Event Budget:</label>
+                <input type="number" id="event-budget" name="event-budget" required>
+                <button type="submit">Plan Event</button>
+            </form>
+        </section>
+        <section id="event-summary">
+            <h2>Event Summary</h2>
+            <div id="event-info"></div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Event Planner
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
